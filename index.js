@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-const envVar = process.env.MY_ENV_VAR || 'Variable no definida';
+const envVar = process.env.PORT || 'Variable no definida';
 res.end(`Hola desde Azure App Service 🚀\nMY_ENV_VAR: ${envVar}`);
 });
 
